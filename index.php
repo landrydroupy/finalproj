@@ -1,31 +1,27 @@
 <!doctype html>
+
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Buildings</title>
+    <title>Courses</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
-      
-<h1>Movies</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>MovieID</th>
+    <h1>Movies</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <<th>MovieID</th>
             <th>Movie Name</th>
             <th>Director</th>
            <th>Release Date</th>
             <th>Rating</th>
-            <th>IMDB Score</th>
-          </tr>
-        </thead>
-        <tbody>
-      
-      
-      
-      
+            <th>IMDB Score</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <?php
 $servername = "localhost";
 $username = "landryou_user";
 $password = "A2kYbmhiMHTE";
@@ -38,7 +34,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
 $sql = "SELECT * from movies";
 $result = $conn->query($sql);
 
@@ -47,7 +42,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["movieID"]?></td>
+   <td><?=$row["movieID"]?></td>
     <td><?=$row["movieName"]?></td>
     <td><?=$row["director"]?></td>
     <td><?=$row["releaseDate"]?></td>
@@ -59,8 +54,8 @@ if ($result->num_rows > 0) {
     </td>
   </tr>
 <?php
-  
-else {
+  }
+} else {
   echo "0 results";
 }
 $conn->close();
