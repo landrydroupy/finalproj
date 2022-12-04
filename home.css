@@ -8,4 +8,12 @@ body {
  font-family:Dubai;
 }
 
+p{
+ background-color: white;
+    padding: 1em 1.5em;
+    display: block;
+    margin: 5px;
+    border-radius: 20px;
+    background-color:azure;
+}
 
