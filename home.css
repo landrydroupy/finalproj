@@ -8,7 +8,7 @@ body {
  font-family:Dubai;
 }
 
-p{
+.description{
  background-color: white;
     padding: 1em 1.5em;
     display: block;
