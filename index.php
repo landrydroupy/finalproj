@@ -13,7 +13,7 @@
   
   <body>
     
-  <div class="jumbotron">
+  <div class="jumbotron" style="background-color:white;">
   <h1 class="display-4"> Hello, welcome to MovieTracker </h1>
   <p class="lead">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
   <hr class="my-4">
