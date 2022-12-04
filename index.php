@@ -14,19 +14,15 @@
 
   <body>
     
-  <div class="jumbotron" style="background-color:white;">
-    
-  <h1 class="display-4"> Hello, welcome to MovieTracker </h1>
-  <p class="lead">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
+  <div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
-  <p>Use the following buttons to begin using the website!</p>
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Input Movie Details</a>
-     <a class="btn btn-primary btn-lg" href="#" role="button">Write a Review</a>
-     <a class="btn btn-primary btn-lg" href="#" role="button">Leave a Plot Summary</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
-    
-    </div>
+</div>
   
   </body>
   
