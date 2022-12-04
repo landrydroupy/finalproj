@@ -5,10 +5,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Movies</a>
-      <a class="nav-item nav-link" href="#">Reviews</a>
-      <a class="nav-item nav-link disabled" href="#">Plot</a>
+      <a class="nav-item nav-link" href="movies.php">Movies</a>
+      <a class="nav-item nav-link" href="reviews.php">Reviews</a>
+      <a class="nav-item nav-link disabled" href="plot.php">Plot</a>
     </div>
   </div>
 </nav>
