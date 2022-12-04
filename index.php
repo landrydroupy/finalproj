@@ -16,7 +16,7 @@
      
  <div class="container">
   <div class="jumbotron" style="text-align:center; font-family:Dubai; color:white;">
-  <h1 class="display-4">Hello, world!</h1>
+  <h1 class="display-4">Welcome to MovieTracker </h1>
  <p class="lead">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
   <hr class="my-4">
   <p>Use the following buttons to begin using the website!</p>
