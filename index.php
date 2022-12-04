@@ -15,7 +15,7 @@
   <body>
      
  <div class="container">
-  <div class="jumbotron" style="text-align:center">
+  <div class="jumbotron" style="text-align:center  font-family:Dubai">
   <h1 class="display-4">Hello, world!</h1>
  <p class="lead">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
   <hr class="my-4">
