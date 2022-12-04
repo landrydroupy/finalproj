@@ -15,6 +15,7 @@
   <body>
     
   <div class="jumbotron" style="background-color:white;">
+    <div class="container">
   <h1 class="display-4"> Hello, welcome to MovieTracker </h1>
   <p class="lead">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
   <hr class="my-4">
@@ -24,7 +25,8 @@
      <a class="btn btn-primary btn-lg" href="#" role="button">Write a Review</a>
      <a class="btn btn-primary btn-lg" href="#" role="button">Leave a Plot Summary</a>
   </p>
-</div>
+    </div>
+    </div>
   
   </body>
   
