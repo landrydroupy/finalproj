@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
   <tr>
    <td><?=$row["plotID"]?></td>
     <td><?=$row["movieName"]?></td>
-    <td><button href="<?=$row["trailer"]?>">
+    <td><button onclick="<?=$row["trailer"]?>" type="button">
       Watch
     </button></td>
     <td><?=$row["plot"]?></td>
