@@ -27,14 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
       $sqlAdd = "insert into movies (movieID,movieName,director,releaseDate,rating,imdb_score) value (?,?,?,?,?,?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("ssssf", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore']);
+      $stmtAdd->bind_param("ssssd", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New Movie added.</div>';
       break;
     case 'Edit':
       $sqlEdit = "update movies set  movieName=?,director=?,releaseDate=?,rating=?,imdb_score=? where movieID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssdsfi", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore'] ,$_POST['mid']);
+      $stmtEdit->bind_param("ssssdi", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore'] ,$_POST['mid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Movie edited.</div>';
       break;
