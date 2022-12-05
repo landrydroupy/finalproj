@@ -96,10 +96,10 @@ if ($result->num_rows > 0) {
                           <label for="editMovie<?=$row["movieID"]?>name" class="form-label">movieName</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>movieID" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nMovieName" value="<?=$row['movieName']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's name.</div>
-                         <label for="editMovie<?=$row["movieID"]?>name" class="form-label">First Name</label>
+                         <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Director</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>director" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nDirector" value="<?=$row['director']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Director.</div>
-                          <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Last Name</label>
+                          <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Release Date</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>releaseDate" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nReleaseDate" value="<?=$row['releaseDate']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Release Date.</div>
                            <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Grade</label>
