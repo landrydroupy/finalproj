@@ -25,7 +25,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-      $sqlAdd = "insert into movies (movieID,movieName,director,releaseDate,rating,imdb_score) value (?,?,?,?,?,?)";
+      $sqlAdd = "insert into movies (movieName,director,releaseDate,rating,imdb_score) value (?,?,?,?,?)";
       $stmtAdd = $conn->prepare($sqlAdd);
       $stmtAdd->bind_param("ssssd", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore']);
       $stmtAdd->execute();
