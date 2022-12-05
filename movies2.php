@@ -83,7 +83,7 @@ if ($result->num_rows > 0) {
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editMovie<?=$row["movieID"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editStudent<?=$row["movieID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editMovie<?=$row["movieID"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editMovie<?=$row["movieID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editMovie<?=$row["movieID"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -99,7 +99,7 @@ if ($result->num_rows > 0) {
                          <label for="editMovie<?=$row["movieID"]?>name" class="form-label">First Name</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>director" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nDirector" value="<?=$row['director']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Director.</div>
-                          <label for="editStudent<?=$row["movieID"]?>name" class="form-label">Last Name</label>
+                          <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Last Name</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>releaseDate" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nReleaseDate" value="<?=$row['releaseDate']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Release Date.</div>
                            <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Grade</label>
