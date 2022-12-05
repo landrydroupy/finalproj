@@ -34,14 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Edit':
       $sqlEdit = "update plot set  movieName=?,trailer=?,plot=? where plotID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("sssi", $_POST['nMovieName'],$_POST['nTrailer'],$_POST['nPlot'],$_POST[‘pid’]);
+      $stmtEdit->bind_param("sssi", $_POST['nMovieName'],$_POST['nTrailer'],$_POST['nPlot'],$_POST[‘’]);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Plot edited.</div>';
       break;
     case 'Delete':
       $sqlDelete = "delete from plot where plotID=?";
       $stmtDelete = $conn->prepare($sqlDelete);
-      $stmtDelete->bind_param("i", $_POST['mid']);
+      $stmtDelete->bind_param("i", $_POST['pid']);
       $stmtDelete->execute();
       echo '<div class="alert alert-success" role="alert">Plot deleted.</div>';
       break;
