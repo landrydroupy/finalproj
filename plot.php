@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
    <td><?=$row["plotID"]?></td>
     <td><?=$row["movieName"]?></td>
     <td>
-      <a href="<?=$row["trailer"]?>" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Watch</a>
+      <a href="<?=$row["trailer"]?>" target="_blank" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Watch</a>
     </td>
     <td><?=$row["plot"]?></td>
     <td>
