@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Edit':
       $sqlEdit = "update plot set  movieName=?,trailer=?,plot=? where plotID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("sssi", $_POST['nMovieName'],$_POST['nTrailer'],$_POST['nPlot'],$_POST[‘’]);
+      $stmtEdit->bind_param("sssi", $_POST['nMovieName'],$_POST['nTrailer'],$_POST['nPlot'],$_POST['pid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Plot edited.</div>';
       break;
