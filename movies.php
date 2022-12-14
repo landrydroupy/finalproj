@@ -171,7 +171,7 @@ $conn->close();
                   <label for="movie_rating" class="form-label">Rating</label>
                   <input type="text" class="form-control" id="movie_rating" aria-describedby="nameHelp" name="nRating">
                   <div id="nameHelp" class="form-text">Enter the Movie's Rating.</div>
-                   <label for="movie_imdbScore" class="form-label">Grade</label>
+                   <label for="movie_imdbScore" class="form-label">Enter IMDB Score</label>
                   <input type="text" class="form-control" id="movie_imdbScore" aria-describedby="nameHelp" name="nIMDBScore">
                   <div id="nameHelp" class="form-text">Enter the Movie's IMDB Score.</div>
 		  
