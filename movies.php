@@ -102,7 +102,7 @@ if ($result->num_rows > 0) {
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Director.</div>
                           <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Release Date</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>releaseDate" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nReleaseDate" value="<?=$row['releaseDate']?>">
-                          <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Release Date.</div>
+                          <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's Release Date.(yyyy-mm-dd)</div>
                            <label for="editMovie<?=$row["movieID"]?>name" class="form-label">Grade</label>
                           <input type="text" class="form-control" id="editMovie<?=$row["movieID"]?>rating" aria-describedby="editMovie<?=$row["movieID"]?>Help" name="nRating" value="<?=$row['rating']?>">
                           <div id="editMovie<?=$row["movieID"]?>Help" class="form-text">Enter the Movie's rating.</div>
