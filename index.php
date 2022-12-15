@@ -19,6 +19,14 @@
   <h1 class="display-4">Welcome to MovieTracker </h1>
  <p class="description">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched.</p>
   <hr class="my-4">
+   
+  <p class="description">Use the following buttons to begin using the website!</p>
+  <p class="lead">
+     <a class="btn btn-primary btn-lg" href="movies.php" role="button">Input Movie Details</a>
+     <a class="btn btn-primary btn-lg" href="reviews.php" role="button">Write a Review</a>
+     <a class="btn btn-primary btn-lg" href="plot.php" role="button">Leave a Plot Summary</a>
+  </p>
+</div>
    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -39,14 +47,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
-  <p class="description">Use the following buttons to begin using the website!</p>
-  <p class="lead">
-     <a class="btn btn-primary btn-lg" href="movies.php" role="button">Input Movie Details</a>
-     <a class="btn btn-primary btn-lg" href="reviews.php" role="button">Write a Review</a>
-     <a class="btn btn-primary btn-lg" href="plot.php" role="button">Leave a Plot Summary</a>
-
-  </p>
 </div>
 </div>
   </body>
