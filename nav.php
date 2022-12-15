@@ -5,7 +5,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="movies.php">About</a>
+      <a class="nav-item nav-link" href="about.php">About</a>
       <a class="nav-item nav-link" href="movies.php">Movies</a>
       <a class="nav-item nav-link" href="reviews.php">Reviews</a>
       <a class="nav-item nav-link" href="plot.php">Plot</a>
