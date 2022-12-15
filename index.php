@@ -19,9 +19,7 @@
    
   <p class="description">Use the following buttons to begin using the website!</p>
   <p class="lead">
-     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
-        Input Movie Details
-      </button>
+     <a class="btn btn-primary btn-lg" href="reviews.php" role="button">Input Movie Details</a>
      <a class="btn btn-primary btn-lg" href="reviews.php" role="button">Write a Review</a>
      <a class="btn btn-primary btn-lg" href="plot.php" role="button">Leave a Plot Summary</a>
   </p>
