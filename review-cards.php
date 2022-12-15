@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["rate"]?>/10</h5>
       <p class="card-text"><ul>
 <?php
-    $section_sql = "select s.numberRating,r.movieName,r.personalRating from reviews r join rating s on r.personalRating = s.numberRating where s.numberRating=" . $row["personalRating"];
+    $section_sql = "select s.numberRating,r.movieName,r.personalRating from reviews r join rating s on r.personalRating = s.numberRating where r.personalRating=" . $row["numberRating"];
     $section_result = $conn->query($section_sql);
     
     while($section_row = $section_result->fetch_assoc()) {
