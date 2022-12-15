@@ -19,7 +19,7 @@
   <h1 class="display-4">Welcome to MovieTracker </h1>
  <p class="description">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched.</p>
   <hr class="my-4">
-    div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
