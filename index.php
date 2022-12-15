@@ -17,8 +17,29 @@
  <div class="container">
   <div class="description" style="text-align:center; font-family:Dubai; color:black;">
   <h1 class="display-4">Welcome to MovieTracker </h1>
- <p class="description">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched</p>
+ <p class="description">Through the use of this site, users will be able to input personally watched movies to keep a personalized catalog of the movies they have watched.</p>
   <hr class="my-4">
+    div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   <p class="description">Use the following buttons to begin using the website!</p>
   <p class="lead">
      <a class="btn btn-primary btn-lg" href="movies.php" role="button">Input Movie Details</a>
