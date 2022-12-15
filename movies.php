@@ -76,7 +76,7 @@ if ($result->num_rows > 0) {
           <tr>
            <td><?=$row["movieID"]?></td>
     <td><?=$row["movieName"]?></td>
-    <td><?=$row["director"]?></td>
+    <td><a href="movie-director.php?id=<?=$row["director"]?>"><?=$row["director"]?></a></td>
     <td><?=$row["releaseDate"]?></td>
     <td><?=$row["rating"]?></td>
     <td><?=$row["imdb_score"]?></td>
