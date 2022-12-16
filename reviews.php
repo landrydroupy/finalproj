@@ -51,7 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
     
-     <h1>Reviews</h1>
+	    <h1>Reviews</h1>
+	    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReview">
+        Add New
+      </button>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -139,9 +142,7 @@ $conn->close();
       </table>
       <br />
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReview">
-        Add New
-      </button>
+      
 
       <!-- Modal -->
       <div class="modal fade" id="addReview" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addReviewLabel" aria-hidden="true">
