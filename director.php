@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
     
      <h1>Directors</h1>
- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDirector">
         Add Movie
       </button>
 <table class="table table-hover">
