@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 	    <h1>Reviews</h1>
 	    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReview">
-        Add New
+        Add Review
       </button>
 <table class="table table-hover">
   <thead>
