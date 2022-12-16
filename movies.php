@@ -17,9 +17,9 @@ $username = "landryou_user";
 $password = "A2kYbmhiMHTE";
 $dbname = "landryou_project_data";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -51,6 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
     
      <h1>Movies</h1>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
+        Add Movie
+      </button>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -69,7 +72,7 @@ $sql = "SELECT * from movies";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
+  
   while($row = $result->fetch_assoc()) {
 ?>
           
@@ -141,12 +144,10 @@ $conn->close();
         </tbody>
       </table>
       <br />
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
-        Add New
-      </button>
+      
+     
 
-      <!-- Modal -->
+      
       <div class="modal fade" id="addMovie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMovieLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
