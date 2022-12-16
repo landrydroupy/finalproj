@@ -18,9 +18,9 @@ $username = "landryou_user";
 $password = "A2kYbmhiMHTE";
 $dbname = "landryou_project_data";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -72,7 +72,7 @@ $sql = "SELECT * from reviews";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
+  
   while($row = $result->fetch_assoc()) {
 ?>
           
@@ -141,10 +141,8 @@ $conn->close();
         </tbody>
       </table>
       <br />
-      <!-- Button trigger modal -->
       
-
-      <!-- Modal -->
+	    
       <div class="modal fade" id="addReview" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addReviewLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
