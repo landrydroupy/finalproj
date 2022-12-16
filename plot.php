@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
      <h1>Plot</h1>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPlot">
-        Add New
+        Add Plot
       </button>
 <table class="table table-hover">
   <thead>
