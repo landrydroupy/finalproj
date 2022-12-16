@@ -29,14 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
       $sqlAdd = "insert into reviews (movieName,DateWatched,personalRating,review) value (?,?,?,?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("ssss", $_POST['nMovieName'],$_POST['nDateWatched'],$_POST['npersonalRating'],$_POST['nReview']);
+      $stmtAdd->bind_param("ssis", $_POST['nMovieName'],$_POST['nDateWatched'],$_POST['npersonalRating'],$_POST['nReview']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New Review added.</div>';
       break;
     case 'Edit':
       $sqlEdit = "update reviews set  movieName=?,DateWatched=?,personalRating=?,review=? where reviewID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssssi", $_POST['nMovieName'],$_POST['nDateWatched'],$_POST['npersonalRating'],$_POST['nReview'],$_POST['rid']);
+      $stmtEdit->bind_param("ssisi", $_POST['nMovieName'],$_POST['nDateWatched'],$_POST['npersonalRating'],$_POST['nReview'],$_POST['rid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Review edited.</div>';
       break;
