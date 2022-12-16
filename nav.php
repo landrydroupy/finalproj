@@ -9,7 +9,7 @@
       <a class="nav-item nav-link" href="movies.php">Movies</a>
       <a class="nav-item nav-link" href="reviews.php">Reviews</a>
       <a class="nav-item nav-link" href="plot.php">Plot</a>
-      <a class="nav-item nav-link" href="director.php">Plot</a>
+      <a class="nav-item nav-link" href="director.php">Directors</a>
       <a class="nav-item nav-link" href="review-cards.php">Reviews Sorted</a>
     </div>
   </div>
