@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Edit':
       $sqlEdit = "update director set  directorName=?,academyNoms=?,academyWins=?,filmNumber=? where directorID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("siiii", $_POST['nMovieName'],$_POST['nDirector'],$_POST['nReleaseDate'],$_POST['nRating'],$_POST['nIMDBScore'] ,$_POST['did']);
+      $stmtEdit->bind_param("siiii", $_POST['ndirectorName'],$_POST['nacademyNoms'],$_POST['nacademyWins'],$_POST['nfilmNumber'] ,$_POST['did']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Director edited.</div>';
       break;
