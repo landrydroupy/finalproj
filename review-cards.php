@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
 ?>
    <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?=$row["numberRating"]?>/10</h5>
+      <h5 class="card-title"><?=$row["numberRating"]?>0%</h5>
       <p class="card-text"><ul>
 <?php
     $section_sql = "select s.numberRating,r.movieName,r.personalRating from reviews r join rate s on r.personalRating = s.numberRating where r.personalRating=" . $row["numberRating"];
